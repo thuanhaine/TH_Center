@@ -2,15 +2,15 @@ import { CiFaceSmile, CiFaceMeh, CiFaceFrown } from "react-icons/ci";
 export const CardsData = [
   // vidu co 20hs, trong do 5hs kha, 11 hs TB,  4 hs Yeu
   {
-    title: "Good Students",
+    title: "Good",
     color: {
-      backGroundColor: "rgb(0, 240, 52)",
-      boxShadow: "0px 0px 10px 1px rgb(0, 240, 52)",
+      backGroundColor: "rgb(110 255 142)",
+      boxShadow: "0px 0px 10px 1px rgb(110 255 142)",
     },
     barValue: 25,
     value: 5,
     icon: CiFaceSmile,
-    year: 2022,
+    time: "In the last course",
     series: [
       {
         name: "Excellent Students",
@@ -19,15 +19,15 @@ export const CardsData = [
     ],
   },
   {
-    title: "Average Students",
+    title: "Average",
     color: {
-      backGroundColor: "rgb(255, 200, 47)",
+      backGroundColor: "rgb(255 212 92)",
       boxShadow: "0px 0px 10px 1px rgb(255, 200, 47)",
     },
     barValue: 51,
     value: 11,
     icon: CiFaceMeh,
-    year: 2022,
+    time: "In the last course",
     series: [
       {
         name: "Excellent Students",
@@ -36,15 +36,15 @@ export const CardsData = [
     ],
   },
   {
-    title: "Below Average Students",
+    title: "Bad",
     color: {
-      backGroundColor: "rgb(255, 89, 47)",
+      backGroundColor: "rgb(255 130 98",
       boxShadow: "0px 0px 10px 1px rgb(255, 89, 47)",
     },
     barValue: 20,
     value: 4,
     icon: CiFaceFrown,
-    year: 2022,
+    time: "In the last course",
     series: [
       {
         name: "Excellent Students",

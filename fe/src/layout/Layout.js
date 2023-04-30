@@ -5,3 +5,4 @@ export { default as Teacher } from "./teacher/Teacher";
 export { default as Class } from "./class/Class";
 export { default as Schedule } from "./schedule/Schedule";
 export { default as Student } from "./student/Student";
+export { default as Request } from "./request/Request";

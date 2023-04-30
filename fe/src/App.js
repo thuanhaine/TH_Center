@@ -12,7 +12,7 @@ function App() {
   const [isLogin, setIsLogin] = useState(true);
   return isLogin ? (
     <Routes>
-      {Student_User.map((route, index) => {
+      {Amin_User.map((route, index) => {
         let Layout = DefaultLayout;
         if (route.layout === null) {
           Layout = Fragment;

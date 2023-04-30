@@ -7,6 +7,7 @@ import {
   Schedule,
   Teacher,
   Student,
+  Request,
 } from "../layout/Layout";
 const Unknow_User = [
   { path: "/", component: Login },
@@ -39,6 +40,7 @@ const Amin_User = [
   { path: "/schedule", component: Schedule, layout: DefaultLayout },
   { path: "/teacher", component: Teacher, layout: DefaultLayout },
   { path: "/student", component: Student, layout: DefaultLayout },
+  { path: "/request", component: Request, layout: DefaultLayout },
 ];
 
 export { Unknow_User, Student_User, Teacher_User, Amin_User };

@@ -13,13 +13,12 @@ function Card({ data }) {
     >
       <div className="radialBar">
         <CircularProgressbar value={data.barValue} text={`${data.barValue}%`} />
-        <p className="title">
-          {data.year}-{data.year + 1}
-        </p>
+        <p className="title">{data.title}</p>
       </div>
       <div className="detail">
-        <span>{data.value}/30</span>
         <data.icon className="icon" />
+        <span>{data.value}/30</span>
+        <p>{data.time}</p>
       </div>
     </div>
   );

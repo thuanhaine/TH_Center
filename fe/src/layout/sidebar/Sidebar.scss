@@ -52,22 +52,23 @@
       color: black;
       &:hover {
         cursor: pointer;
-        background-color: rgb(209, 234, 253);
+        background-color: rgb(218 209 239);
 
         opacity: 0.8;
       }
     }
 
     .active {
-      background-color: rgb(181, 223, 255);
+      background-color: rgb(183, 151, 252);
       transition: all 300ms ease;
       padding-left: 3rem;
       font-weight: 700;
+      color: white;
       &::before {
         content: "";
         height: 100%;
         width: 1.5rem;
-        background-color: rgb(78, 175, 255);
+        background-color: rgb(158, 130, 218);
         left: 0;
         position: absolute;
       }
@@ -83,7 +84,7 @@
     line-height: 3rem;
     &:hover {
       cursor: pointer;
-      background-color: rgb(209, 234, 253);
+      background-color: rgb(218 209 239);
 
       opacity: 0.8;
     }
