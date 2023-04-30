@@ -1,0 +1,15 @@
+.defaultlayout {
+  background: linear-gradient(to right, #eadfff, #a7d7f7);
+  height: 100vh;
+  display: flex;
+  .glass {
+    height: 95%;
+    width: 95%;
+    margin: auto;
+    display: grid;
+    border-radius: 2rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+    grid-template-columns: 15rem auto 20rem;
+  }
+}

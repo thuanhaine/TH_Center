@@ -1,0 +1,90 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-top: 3rem;
+  transition: all 300ms ease;
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+    gap: 0.5rem;
+    .img {
+      height: 10rem;
+    }
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-weight: 700;
+      font-size: 24px;
+
+      .first {
+        font-size: 50px;
+        color: rgb(6, 110, 230);
+      }
+    }
+  }
+
+  //   Menu
+  .menu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    gap: 1.5rem;
+    font-size: 22px;
+    padding-left: 1rem;
+    justify-content: space-between;
+    .item {
+      height: 4rem;
+      display: flex;
+      align-items: center;
+      padding-left: 2rem;
+      gap: 1rem;
+      border-radius: 1rem;
+      font-weight: 600;
+      position: relative;
+
+      &:hover {
+        cursor: pointer;
+        background-color: rgb(209, 234, 253);
+
+        opacity: 0.8;
+      }
+    }
+
+    .active {
+      background-color: rgb(181, 223, 255);
+      transition: all 300ms ease;
+      padding-left: 3rem;
+      font-weight: 700;
+      &::before {
+        content: "";
+        height: 100%;
+        width: 1.5rem;
+        background-color: rgb(78, 175, 255);
+        left: 0;
+        position: absolute;
+      }
+    }
+  }
+
+  .logout {
+    position: absolute;
+    bottom: 4rem;
+    width: 100%;
+    text-align: center;
+    height: 3rem;
+    line-height: 3rem;
+    &:hover {
+      cursor: pointer;
+      background-color: rgb(209, 234, 253);
+
+      opacity: 0.8;
+    }
+  }
+}

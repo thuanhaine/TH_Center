@@ -1,0 +1,104 @@
+.register {
+  background: linear-gradient(to right, #8360c3, #2ebf91);
+  padding: 5% 25%;
+  position: relative;
+  .container {
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0 20px 5px white;
+    .logo {
+      img {
+        border-radius: 50%;
+      }
+    }
+    .options-role {
+      .text {
+        font-size: 22px;
+        padding-left: 5%;
+      }
+      .box {
+        display: flex;
+        height: 100px;
+        justify-content: space-around;
+        div {
+          display: flex;
+          width: 40%;
+          text-align: center;
+          font-size: 26px;
+          opacity: 0.8;
+          font-weight: 600;
+          border: 2px solid #ccc;
+          justify-content: center;
+          align-items: center;
+          border-radius: 12px;
+          gap: 8px;
+
+          &:hover {
+            cursor: pointer;
+            background-color: rgb(249, 249, 255);
+          }
+
+          input[type="radio"]:checked {
+            accent-color: blue;
+          }
+        }
+
+        .active {
+          color: blue;
+          border: 2px solid blue;
+          background-color: rgb(249, 249, 255);
+        }
+      }
+    }
+
+    .form {
+      padding: 32px 5%;
+      .box {
+        font-size: 22px;
+        gap: 32px;
+        padding: 16px;
+        display: block;
+        margin: 16px 0;
+        position: relative;
+        .text {
+          margin-bottom: 0.5rem;
+          font-weight: 600;
+        }
+        input {
+          border: none;
+          outline: none;
+          border-bottom: 4px solid #e7e7e7;
+          border-radius: 4px;
+          height: 3rem;
+          font-size: 2rem;
+          margin: 0;
+          width: 100%;
+          text-align: center;
+        }
+
+        .icon {
+          position: absolute;
+          bottom: 28px;
+          font-size: 35px;
+          left: 28px;
+          background-color: white;
+        }
+      }
+
+      .btn {
+        border-radius: 16px;
+        font-size: 28px;
+        color: white;
+        padding: 16px 40px;
+        background-color: rgb(143, 143, 253);
+        color: white;
+        border: none;
+        margin: 5% 0;
+        &:hover {
+          background-color: rgb(104, 104, 255);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
