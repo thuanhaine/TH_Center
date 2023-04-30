@@ -2,7 +2,7 @@ import React from "react";
 import "./Sidebar.scss";
 import LogoImg from "../../img/logo/logo_remove.png";
 import { AiOutlineLogout } from "react-icons/ai";
-
+import { Link } from "react-router-dom";
 import {
   DataSidebar_Admin,
   DataSidebar_Teacher,
@@ -24,14 +24,15 @@ function Sidebar() {
       <div className="menu">
         {DataSidebar_Admin.map((item, index) => {
           return (
-            <div
+            <Link
+              to={item.path}
               className={selected == index ? "item active" : "item"}
               key={index}
               onClick={() => setSelected(index)}
             >
               <div>{item.icon}</div>
               <span>{item.title}</span>
-            </div>
+            </Link>
           );
         })}
 
