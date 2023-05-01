@@ -1,0 +1,123 @@
+.student {
+  padding-top: 8rem;
+  position: relative;
+
+  .title {
+    font-size: 44px;
+    color: rgb(58, 58, 58);
+    width: 10rem;
+    position: absolute;
+    top: 6rem;
+    left: 12rem;
+  }
+
+  .table {
+    width: 80%;
+    margin: 1rem auto;
+    background-color: white;
+    border-radius: 2rem;
+    height: 45rem;
+    position: relative;
+    .header {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      height: 4rem;
+      line-height: 4rem;
+      background-color: rgb(219, 219, 219);
+      border-radius: 2rem;
+      box-shadow: 0 5px 10px 2px rgb(192, 192, 192);
+      .item {
+        flex: 1;
+        text-align: center;
+        font-size: 26px;
+        font-weight: 600;
+        color: rgb(80, 80, 80);
+        &:first-child {
+          flex: 2;
+        }
+      }
+    }
+
+    .list {
+      margin: 0;
+      padding: 0;
+      .content {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        height: 4rem;
+        line-height: 4rem;
+
+        .item {
+          flex: 1;
+          text-align: center;
+          font-size: 22px;
+          font-weight: 400;
+          color: rgb(80, 80, 80);
+          &:first-child {
+            flex: 2;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            align-items: center;
+            &:hover {
+              color: rgb(164, 46, 243);
+              cursor: pointer;
+            }
+          }
+          .img {
+            height: 3rem;
+            width: 3rem;
+          }
+        }
+      }
+    }
+
+    .controller {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      right: -6rem;
+      top: 40%;
+      justify-content: center;
+      align-content: center;
+      font-size: 32px;
+      gap: 1rem;
+      background-color: white;
+      border-radius: 2rem;
+      color: rgb(155, 155, 155);
+      overflow: hidden;
+      box-shadow: 0 0 10px 2px rgb(161, 161, 161);
+      opacity: 0.5;
+      transition: all 500ms ease;
+      &:hover {
+        opacity: 1;
+        cursor: pointer;
+      }
+      span {
+        text-align: center;
+        color: rgb(44, 44, 44);
+      }
+
+      .icon-up {
+        padding: 1rem 1rem 0 1rem;
+
+        &:hover {
+          background: linear-gradient(180deg, rgb(219, 176, 243), white);
+          color: black;
+        }
+      }
+      .icon-down {
+        padding: 0 1rem 1rem 1rem;
+
+        &:hover {
+          background: linear-gradient(180deg, white, rgb(219, 176, 243));
+          color: black;
+        }
+      }
+    }
+  }
+}
